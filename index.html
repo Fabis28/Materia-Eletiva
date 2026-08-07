@@ -4,15 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revisão HTML e CSS</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        p {
+            font-size: 20px;
+        }
+        .classe{
+            color: blue;
+        }
+        #Nome{
+            color: blueviolet;
+        }
+    </style>
 </head>
 <body>
     <p>Esse é um Parágrafo</p>
     <h1>Título de nível 1</h1>
     <h6>Título de nivel 6</h6>
     <ol>
-        <li>Posição de lista Ordenada 1</li>
-        <li>Posição de lista Ordenada 2</li>
-        <li>Posiçao de lista Ordenada 3</li>
+        <li class="classe">Posição de lista Ordenada 1</li>
+        <li class="classe">Posição de lista Ordenada 2</li>
+        <li class="classe">Posiçao de lista Ordenada 3</li>
     </ol>
     <ul>
         <li>Item de lista não ordenada</li>
@@ -36,8 +50,8 @@
     <table>
         <thead>
             <tr>
-                <th>Coluna 1</th>
-                <th>Coluna 2</th>
+                <th class="classe">Coluna 1</th>
+                <th class="classe">Coluna 2</th>
             </tr>
         </thead>
         <tbody>
@@ -52,5 +66,17 @@
             </tr>
         </tfoot>
     </table>
+    <form action="" method="">
+        <label for="Nome">Informe o Nome: </label>
+        <input type="text" id="Nome" name="Nome">
+        <label for="desc">Descrição:</label>
+        <textarea id="desc" name="desc"></textarea>
+        <label for="opt">Opção:</label>
+        <select id="opt" name="opt">
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+        </select>
+        <button type="submit">Enviar</button>
+    </form>
 </body>
 </html>
